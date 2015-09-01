@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;drawable-hdpi&apos;&#x0D;&#x0A;- Original project: &apos;ch05_dynamiclistview&apos;&#x0D;&#x0A;- Destination element: &apos;drawable-hdpi&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     item3.png&#x0D;&#x0A;     item4.png&#x0D;&#x0A;     item1.png&#x0D;&#x0A;     item5.png&#x0D;&#x0A;     item2.png" description="Copy files" element1="res/drawable/item3.png" element2="res/drawable/item4.png" element3="res/drawable/item1.png" element4="res/drawable/item5.png" element5="res/drawable/item2.png" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1439862506295" target="/ListView/res/drawable-hdpi" units="0" version="1.0"/>
+</session>

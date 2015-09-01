@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/ch05_datetimepicker" element2="/ch05_dynamiccheckbox" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1429683785172"/>
+</session>

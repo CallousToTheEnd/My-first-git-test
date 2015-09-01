@@ -1,0 +1,11 @@
+package com.lk.notepad;
+
+public class NoteListManager {
+	private String title;
+	private String content;
+	
+	public NoteListManager(String title, String contetn){
+		this.title = title;
+		this.content = content;
+	}
+}

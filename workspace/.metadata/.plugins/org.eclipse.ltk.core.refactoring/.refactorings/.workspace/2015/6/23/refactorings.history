@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 18 resources" deleteContents="false" description="Delete 18 resources" element1="/ch06_contacts" element10="/ch08_alarm" element11="/ch08_chronometer" element12="/ch08_handler" element13="/ch08_phoneblacklist" element14="/ch08_serviceactivity" element15="/ch08_servicelifecycle" element16="/ch08_startupservice" element17="/ch08_timer" element18="/Jsuanqi" element2="/ch06_simplecursoradapter" element3="/ch07_dictionary_intent" element4="/ch07_intent" element5="/ch07_invoke_dictionary" element6="/ch07_invokeotherapp" element7="/ch07_startup" element8="/ch08_aidl" element9="/ch08_aidlclient" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="18" stamp="1433117535807"/>
+</session>
