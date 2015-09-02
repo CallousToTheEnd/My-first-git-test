@@ -38,7 +38,7 @@ public class DBService extends SQLiteOpenHelper {
 	public Cursor dataSelect(String title){
 		SQLiteDatabase db = this.getReadableDatabase();
 		if(title != null){
-			String sql = "select * from notepaddata where title=?";
+			String sql = "select title as _id,content,time from notepaddata where title=?";
 			Cursor cursor = db.rawQuery(sql, new String[] {title});
 			return cursor;
 		}else{
@@ -94,6 +94,14 @@ public class DBService extends SQLiteOpenHelper {
 		String sql2 = "update notepaddata set time=? where title=?";
 		db.execSQL(sql, new String[] {content, title});
 		db.execSQL(sql2, new String[] {time, title});
+	}
+	
+	//数据删除
+	public void dataDelect(String title){
+		System.out.println(title);
+		SQLiteDatabase db = this.getWritableDatabase();
+		String sql = "delete from notepaddata where title='" + title + "'";
+		db.execSQL(sql);
 	}
 	
 	//判断是否存在相同标题的记事本

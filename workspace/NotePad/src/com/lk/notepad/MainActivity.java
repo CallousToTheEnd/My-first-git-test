@@ -8,6 +8,8 @@ import com.lk.db.DBService;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -31,6 +33,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -50,20 +53,11 @@ public class MainActivity extends Activity {
 		
 		//ActionBar设置
 		ActionBar actionBar = getActionBar();
+		actionBar.setDisplayShowTitleEnabled(false);
 		Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.actionbar_background);
 		BitmapDrawable drawable = new BitmapDrawable(bitmap);
 		actionBar.setBackgroundDrawable(drawable);
-//		actionBar.setCustomView(R.layout.ad);
-//		actionBar.getCustomView().findViewById(R.id.button1).setOnClickListener(new OnClickListener() {
-//			
-//			@Override
-//			public void onClick(View v) {
-//				Intent intent = new Intent(MainActivity.this, CreateNote.class);
-//				startActivity(intent);
-//			}
-//		});
-//		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM  
-//		        | ActionBar.DISPLAY_SHOW_HOME);
+		
 		
 	}
 	
@@ -104,7 +98,7 @@ public class MainActivity extends Activity {
 				mViewHolder mvh = (mViewHolder) arg0;
 				mvh.getTitle().setText(" " + noteList.get(arg1));
 				mvh.getContent().setText(timeList.get(arg1) + " ");
-				mvh.setPosition(arg1);			//每个Item设置一个position
+				mvh.setPosition(arg1);			//为每个Item设置一个position
 			}
 		
 			@Override
@@ -140,9 +134,16 @@ public class MainActivity extends Activity {
 								
 						@Override
 						public boolean onLongClick(View v) {
-							new AlertDialog.Builder(MainActivity.this).setMessage("sdf")
-								.show();
-							return false;
+							new AlertDialog.Builder(MainActivity.this).setNegativeButton("删除", new DialogInterface.OnClickListener() {
+								
+								@Override
+								public void onClick(DialogInterface dialog, int which) {
+									String title = tvTitle.getText().toString();
+									DBService dbService = new DBService(MainActivity.this, "notepad", null, 1);
+									dbService.dataDelect(title);
+								}
+							}).show();
+							return true;
 						}
 					});
 					root.setOnClickListener(new OnClickListener() {

@@ -28,19 +28,19 @@ public final class R {
         public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
-        public static final int button1=0x7f080002;
         public static final int createNote=0x7f080007;
         public static final int etCreateNote=0x7f080000;
         public static final int etOk=0x7f080003;
         public static final int rvList=0x7f080001;
         public static final int saveNote=0x7f080006;
         public static final int tvContent=0x7f080005;
+        public static final int tvDelete=0x7f080002;
         public static final int tvTitle=0x7f080004;
     }
     public static final class layout {
         public static final int activity_create_note=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int ad=0x7f030002;
+        public static final int activity_main_longclick=0x7f030002;
         public static final int create_note_ok=0x7f030003;
         public static final int rvlayout=0x7f030004;
     }
