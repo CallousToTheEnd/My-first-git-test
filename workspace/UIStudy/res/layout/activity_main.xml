@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <Button
+            android:id="@+id/btnStartMyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StartMyView" />
+
+        <Button
+            android:id="@+id/btnStartDrawableActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StartDrawableActivity" />
+
+        <Button
+            android:id="@+id/btnStartUiLayoutActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StartUiLayoutActivity" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="在Activity中加载ListView此时无效，改变ui_listview中的ListView的id后再用，因为用ListActivity加载ListView需要设置ListView的id为@android:id/list" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnStartMyListView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="在Activity中加载ListView" />
+
+                <Button
+                    android:id="@+id/btnStartMyListActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="用ListActivity加载ListView" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnStartPhoneListActivity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView显示通讯录" />
+
+            <Button
+                android:id="@+id/btnStartExpendableListActivity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Start ExpendableListActivity" />
+
+            <Button
+                android:id="@+id/btnStartGridViewActivity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Start GridViewActivity" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStartMyTabsActivity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start MyTabsActivity" />
+
+        <Button
+            android:id="@+id/btnStartMenuStudyActivity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="startMenuStudyActivity" />
+    </LinearLayout>
+
+</ScrollView>

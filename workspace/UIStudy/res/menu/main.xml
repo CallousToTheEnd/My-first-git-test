@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="lk.study.uistudy.MainActivity" >
+
+    <item
+        android:id="@+id/menu_item1"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="menu_item1"/>
+    
+    <item
+        android:id="@+id/menu_item2"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom"
+        android:title="menu_item2">
+        <menu >
+            <item 
+                android:id="@+id/menu_item2_child1"
+                android:title="menu_item2_child1"/>
+            <item android:id="@+id/menu_item2_child2"
+                android:title="menu_item2_child2"/>
+        </menu>
+             
+    </item>
+
+</menu>

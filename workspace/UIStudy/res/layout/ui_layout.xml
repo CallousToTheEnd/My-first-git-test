@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    
+	    <!-- 下半部分是跑马灯效果 -->
+	    <TextView
+	        android:id="@+id/tv1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="#CallousToTheEnd# This is my phone 12345，very long,very good"
+	        android:textColor="#666"
+	        android:autoLink="phone"
+	        
+	        android:autoText="false"
+	        android:ellipsize="marquee"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"
+	        android:singleLine="true"
+	        android:marqueeRepeatLimit="marquee_forever"
+	         />
+	
+	    <Button
+	        android:id="@+id/btnUiLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/mybutton_bg" />
+	
+	    <ToggleButton
+	        android:id="@+id/tbtnUiLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="ToggleButton"
+	         />
+	
+	    <Switch
+	        android:id="@+id/switch1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Switch" />
+	
+	    <CheckBox
+	        android:id="@+id/checkBox1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="CheckBox" />
+	
+	    <RadioGroup
+	        android:id="@+id/radioGroup"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <RadioButton
+	            android:id="@+id/rbtn1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="RadioButton 1" />
+	
+	        <RadioButton
+	            android:id="@+id/rbtn2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="RadioButton 2" />
+	
+	        <RadioButton
+	            android:id="@+id/rbtn3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:button="@android:drawable/btn_star"
+	            android:drawableRight="@android:drawable/btn_star"
+	            android:text="RadioButton 3" />
+	    </RadioGroup>
+	
+	    <CheckedTextView
+	        android:id="@+id/checkedTextView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="CheckedTextView"
+	        android:checkMark="@android:drawable/btn_star" />
+	    
+		<Spinner 
+		    android:id="@+id/spinner1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:prompt="@string/hello_world" />
+	
+		<ProgressBar
+		    android:id="@+id/progressBar1"
+		    style="?android:attr/progressBarStyleHorizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		     />
+	
+		<SeekBar
+		    android:id="@+id/seekBar1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" />
+	
+		<TextView
+		    android:id="@+id/tvSeekBarState"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="TextView" />
+		
+		<EditText 
+		    android:id="@+id/editText"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:hint="自定义形状的EditText"
+		    android:background="@drawable/myedittext_shape"
+		    android:drawableLeft="@drawable/ic_launcher"
+		    android:drawablePadding="0dp" />
+		
+		<AutoCompleteTextView 
+		    android:id="@+id/autoCompleteTextVeiw"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+		      
+	</LinearLayout>
+</ScrollView>
